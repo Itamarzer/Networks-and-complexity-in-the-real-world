@@ -1,0 +1,25 @@
+================================================================================
+HYPOTHESIS III PART B: NETWORK CONTROL THEORY & THERMODYNAMIC COST
+================================================================================
+
+BARZEL FRAMEWORK EQUATIONS:
+--------------------------------------------------------------------------------
+Equation (6): xeff = 3.809868
+  (Effective state parameter - average nearest-neighbor activity)
+
+Equation (8): βeff = 14.515096
+  (Control parameter - position on resilience function)
+
+Equation (13): βeff = <s> + S*H
+  <s> (density): 3.620790
+  H (heterogeneity): 0.228517
+  S (symmetry): 1.000000
+  Calculated: 3.849307
+
+DATA CHARACTERISTICS:
+--------------------------------------------------------------------------------
+Timepoints: 261
+Brain regions: 39
+Temporal windows: 247
+Window length: 15 timepoints
+

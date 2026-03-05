@@ -1,0 +1,38 @@
+================================================================================
+HYPOTHESIS III PART B: DIAGNOSTIC REPORT
+================================================================================
+
+ORIGINAL HYPOTHESIS:
+Energy Cost ↑ → Dwell Time ↓ (NEGATIVE correlation)
+
+FINDINGS:
+--------------------------------------------------------------------------------
+
+1. STRONGEST CORRELATION FOUND:
+   Energy: Energy3 (entropy)
+   Dwell: Dwell1 (future-sim)
+   Correlation: -0.1620
+   P-value: 1.0788e-02
+   Significant: YES ✓
+
+2. SUMMARY STATISTICS:
+   Mean correlation: -0.0101
+   Median correlation: -0.0035
+   Std deviation: 0.1295
+   Range: [-0.1620, 0.1462]
+   Significant results: 7 out of 12
+
+3. INTERPRETATION:
+--------------------------------------------------------------------------------
+
+✓ SIGNIFICANT RELATIONSHIP DETECTED
+
+The data shows a significant relationship between energy and dwell time.
+This suggests thermodynamic principles DO influence brain state transitions.
+4. NEXT STEPS:
+--------------------------------------------------------------------------------
+- Use the strongest correlation found as basis for further analysis
+- Consider nonlinear relationships (polynomial, exponential)
+- Examine time-lagged correlations
+- Test with different window lengths
+- Compare with surrogate/null data

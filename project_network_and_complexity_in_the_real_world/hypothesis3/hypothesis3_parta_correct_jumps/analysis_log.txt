@@ -1,0 +1,72 @@
+================================================================================
+HYPOTHESIS III PART A: CORRECT JUMPS INTERPRETATION
+Leadership Relay + Macro-Jumps Analysis
+================================================================================
+
+Data: 261 timepoints, 39 regions
+
+Generated 247 temporal windows
+
+================================================================================
+MICROSTATE DISCRETIZATION (K=5, γ=1.0)
+================================================================================
+
+State 0: 40 windows (16.2%)
+State 1: 49 windows (19.8%)
+State 2: 54 windows (21.9%)
+State 3: 58 windows (23.5%)
+State 4: 46 windows (18.6%)
+
+================================================================================
+CORRECT JUMPS ANALYSIS
+================================================================================
+
+MACRO-LEVEL ANALYSIS (Dominant States)
+--------------------------------------------------------------------------------
+Number of dominant state periods: 90
+Number of macro-jumps (state switches): 89
+Average period duration: 2.74 windows
+
+Stability metric (not jumping): 64.0%
+Jump rate (macro-transitions): 36.0%
+
+TRANSITION BREAKDOWN
+--------------------------------------------------------------------------------
+Micro-transitions (within dominant state): 124 (63.6%)
+Macro-transitions (between dominant states): 71 (36.4%)
+
+INTERPRETATION:
+--------------------------------------------------------------------------------
+The brain exhibits 90 stable dominant states.
+Within each state, there are micro-fluctuations (63.6% of transitions).
+Between states, there are organized jumps (36.4% of transitions).
+
+This is HIERARCHICAL ORGANIZATION:
+  • MACRO-LEVEL: Stable dominant states (genuine stability)
+  • MICRO-LEVEL: Fluctuations within states (exploration/coordination)
+
+================================================================================
+TRANSITION PROBABILITY MATRIX (5×5)
+================================================================================
+
+Transition counts:
+[[10  9  6 11  4]
+ [ 8  8  7 13 13]
+ [ 7 10 16 12  9]
+ [ 8 14 17  8 11]
+ [ 6  8  8 14  9]]
+
+Creating plots...
+
+✓ Plot 1: Leadership Relay saved
+✓ Plot 2: Microstate vs Dominant states saved
+✓ Plot 3: Transition Matrix saved
+✓ Plot 4: Micro vs Macro comparison saved
+
+✓ Statistics saved
+
+================================================================================
+CORRECT JUMPS ANALYSIS COMPLETE
+================================================================================
+
+Results saved to: hypothesis3_parta_correct_jumps

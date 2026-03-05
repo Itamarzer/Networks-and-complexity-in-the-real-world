@@ -1,0 +1,68 @@
+================================================================================
+HYPOTHESIS III PART B: DIAGNOSTIC ANALYSIS
+Testing Data-Hypothesis Fit
+================================================================================
+
+Data: 261 timepoints, 39 regions, 247 windows
+
+================================================================================
+BARZEL EQUATIONS
+================================================================================
+xeff = 3.809868
+βeff = 14.515096
+
+================================================================================
+COMPUTING MULTIPLE ENERGY/DWELL MEASURES
+================================================================================
+
+Energy measure 1 (1-modal): range [0.000, 1.000]
+Energy measure 2 (modal): range [0.000, 1.000]
+Energy measure 3 (entropy): range [0.000, 1.000]
+Energy measure 4 (strength): range [0.000, 1.000]
+Dwell measure 1 (future sim): range [0.000, 1.000]
+Dwell measure 2 (velocity): range [0.000, 1.000]
+Dwell measure 3 (stability): range [0.000, 1.000]
+
+================================================================================
+TESTING ALL ENERGY × DWELL COMBINATIONS
+================================================================================
+
+Energy1 (1-modal)    × Dwell1 (future-sim)   →  r=+0.1456, p=0.0221 ✓
+Energy1 (1-modal)    × Dwell2 (velocity)     →  r=+0.1462, p=0.0215 ✓
+Energy1 (1-modal)    × Dwell3 (stability)    →  r=-0.1462, p=0.0215 ✓
+Energy2 (modal)      × Dwell1 (future-sim)   →  r=-0.1456, p=0.0221 ✓
+Energy2 (modal)      × Dwell2 (velocity)     →  r=-0.1462, p=0.0215 ✓
+Energy2 (modal)      × Dwell3 (stability)    →  r=+0.1462, p=0.0215 ✓
+Energy3 (entropy)    × Dwell1 (future-sim)   →  r=-0.1620, p=0.0108 ✓
+Energy3 (entropy)    × Dwell2 (velocity)     →  r=-0.1127, p=0.0770 
+Energy3 (entropy)    × Dwell3 (stability)    →  r=+0.1127, p=0.0770 
+Energy4 (strength)   × Dwell1 (future-sim)   →  r=+0.0405, p=0.5269 
+Energy4 (strength)   × Dwell2 (velocity)     →  r=+0.0475, p=0.4570 
+Energy4 (strength)   × Dwell3 (stability)    →  r=-0.0475, p=0.4570 
+
+
+TOP 5 STRONGEST CORRELATIONS:
+--------------------------------------------------------------------------------
+-0.1620  Energy3 (entropy) × Dwell1 (future-sim)  ✓ SIGNIFICANT
++0.1462  Energy1 (1-modal) × Dwell2 (velocity)  ✓ SIGNIFICANT
+-0.1462  Energy1 (1-modal) × Dwell3 (stability)  ✓ SIGNIFICANT
++0.1462  Energy2 (modal) × Dwell3 (stability)  ✓ SIGNIFICANT
+-0.1462  Energy2 (modal) × Dwell2 (velocity)  ✓ SIGNIFICANT
+
+================================================================================
+CREATING DIAGNOSTIC PLOTS
+================================================================================
+
+✓ Plot 1: Heatmap saved
+✓ Plot 2: Strongest correlation saved
+✓ Plot 3: Distribution saved
+✓ Plot 4: Time series saved
+
+✓ Diagnostic report saved
+
+================================================================================
+DIAGNOSTIC ANALYSIS COMPLETE
+================================================================================
+
+✓ Results in: hypothesis3_partb_diagnostic
+✓ Check diagnostic_report.txt for interpretation

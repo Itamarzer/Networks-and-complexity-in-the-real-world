@@ -1,0 +1,29 @@
+================================================================================
+HYPOTHESIS III PART A: CORRECT JUMPS INTERPRETATION
+Leadership Relay & Macro-Jumps Analysis
+================================================================================
+
+KEY FINDING:
+--------------------------------------------------------------------------------
+The brain exhibits HIERARCHICAL STATE ORGANIZATION:
+
+MACRO-LEVEL (Dominant States):
+  • Number of dominant state periods: 90
+  • Average period duration: 2.74 windows
+  • Stability (not jumping): 64.0%
+  • Jump rate (macro-transitions): 36.0%
+
+MICRO-LEVEL (Within States):
+  • Micro-transitions (within dominant state): 124 (63.6%)
+  • Macro-transitions (between dominant states): 71 (36.4%)
+
+INTERPRETATION:
+--------------------------------------------------------------------------------
+The brain is NOT in constant chaos (that would be 100% jumps).
+The brain exhibits STABLE DOMINANT PERIODS separated by ORGANIZED TRANSITIONS.
+
+This supports HYPOTHESIS III PART A:
+  ✓ Organized Markovian structure (macro-jumps follow specific patterns)
+  ✓ Energy efficiency (brain stays in states ~64% of time)
+  ✓ Constrained transitions (only 36.4% are between states)
+

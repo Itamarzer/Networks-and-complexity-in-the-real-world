@@ -1,0 +1,21 @@
+{
+  "method": "Spectral Clustering",
+  "k": 5,
+  "gamma": 1.0,
+  "window_length": 30,
+  "step_size": 2,
+  "n_surrogates": 1000,
+  "n_timepoints": 261,
+  "n_nodes": 39,
+  "n_windows": 116,
+  "mean_flexibility_real": 0.8015607580824973,
+  "std_flexibility_real": 0.038681772960768926,
+  "mean_flexibility_surr": 0.7865984392419166,
+  "std_flexibility_surr": 0.0022350544640678863,
+  "p_value_mannwhitney": 0.011920679973023677,
+  "p_value_wilcoxon": 0.023604827528843905,
+  "p_value_ks": 7.522720043093047e-08,
+  "cohens_d": 0.5461145452639646,
+  "hypothesis_supported": true,
+  "mean_silhouette": 0.14144124048203724
+}

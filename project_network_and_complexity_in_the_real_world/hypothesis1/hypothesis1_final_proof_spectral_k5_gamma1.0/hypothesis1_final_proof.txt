@@ -1,0 +1,209 @@
+================================================================================
+HYPOTHESIS I: THE STOCHASTIC ENGINE
+COMPLETE FINAL PROOF
+Spectral Clustering: K=5, Gamma=1.0
+================================================================================
+
+PART 1: TEMPORAL FLEXIBILITY METRIC
+================================================================================
+
+Step 1: Extract Regional Time Series from fMRI
+--------------------------------------------------------------------------------
+
+✓ Downloaded ADHD-200 dataset (10 subjects)
+✓ Downloaded MSDL atlas (39 regions)
+
+Subject 1: ✓ (176, 39)
+Subject 2: ✓ (176, 39)
+Subject 3: ✓ (176, 39)
+Subject 4: ✓ (175, 39)
+Subject 5: ✓ (77, 39)
+Subject 6: ✓ (77, 39)
+Subject 7: ✓ (261, 39)
+Subject 8: ✓ (260, 39)
+Subject 9: ✓ (260, 39)
+Subject 10: ✓ (261, 39)
+
+✓ Extracted 10 subjects
+✓ Selected subject: 261 timepoints, 39 regions
+
+Step 2: Create Sliding Windows
+--------------------------------------------------------------------------------
+
+✓ Windows: 116 (length=30, step=2)
+
+Step 3: Compute Dynamic Connectivity (Pearson Correlation)
+--------------------------------------------------------------------------------
+
+✓ Connectivity matrices: (116, 39, 39)
+
+Step 4: Spectral Clustering (K=5, Gamma=1.0)
+--------------------------------------------------------------------------------
+
+Applying to all windows...
+
+Window  11/116: Silhouette=0.1214
+Window  22/116: Silhouette=0.1622
+Window  33/116: Silhouette=0.1491
+Window  44/116: Silhouette=0.1247
+Window  55/116: Silhouette=0.1191
+Window  66/116: Silhouette=0.1081
+Window  77/116: Silhouette=0.1714
+Window  88/116: Silhouette=0.1204
+Window  99/116: Silhouette=0.1387
+Window 110/116: Silhouette=0.1457
+
+✓ Clustering completed
+  Mean silhouette score: 0.141441
+
+Step 5: Calculate Temporal Flexibility
+--------------------------------------------------------------------------------
+
+Real Brain Flexibility (K=5, γ=1.0):
+  Mean: 0.801561
+  Std:  0.038682
+  Min:  0.721739
+  Max:  0.895652
+  Non-zero nodes: 39/39
+
+================================================================================
+PART 2: PHASE-RANDOMIZED SURROGATE TESTING
+================================================================================
+
+Generating 1000 phase-randomized surrogates...
+(Preserves power spectrum, destroys temporal dynamics)
+
+  Surrogate generation: 7/39 nodes
+  Surrogate generation: 14/39 nodes
+  Surrogate generation: 21/39 nodes
+  Surrogate generation: 28/39 nodes
+  Surrogate generation: 35/39 nodes
+
+✓ Surrogates generated: (1000, 261, 39)
+
+Computing flexibility for each surrogate...
+
+Surrogate  100/1000
+Surrogate  200/1000
+Surrogate  300/1000
+Surrogate  400/1000
+Surrogate  500/1000
+Surrogate  600/1000
+Surrogate  700/1000
+Surrogate  800/1000
+Surrogate  900/1000
+Surrogate 1000/1000
+
+✓ Surrogate flexibility computed
+
+================================================================================
+PART 3: STATISTICAL TESTING (PARAMETRIC + NON-PARAMETRIC)
+================================================================================
+
+TEST 1: Independent Samples t-test
+  t-statistic: 2.380458
+  p-value: 1.979758e-02
+  Result: ✓ SIGNIFICANT
+
+TEST 2: Mann-Whitney U Test (Non-parametric, one-tailed)
+  U-statistic: 987.000000
+  p-value: 1.192068e-02
+  Result: ✓ SIGNIFICANT
+
+TEST 3: Wilcoxon Rank-Sum Test (Non-parametric)
+  z-statistic: 2.263501
+  p-value: 2.360483e-02
+  Result: ✓ SIGNIFICANT
+
+TEST 4: Kolmogorov-Smirnov Test (Distribution comparison)
+  KS-statistic: 0.641026
+  p-value: 7.522720e-08
+
+TEST 5: Effect Size Analysis (Cohen's d)
+  Cohen's d: 0.546115
+  Interpretation: MEDIUM EFFECT
+
+TEST 6: Descriptive Statistics
+  Real brain flexibility:
+    Mean: 0.801561
+    Std:  0.038682
+    Median: 0.808696
+    IQR: 0.047826
+
+  Surrogate flexibility (mean across 1000 surrogates):
+    Mean: 0.786598
+    Std:  0.002235
+    Median: 0.787217
+
+================================================================================
+HYPOTHESIS RESULT
+================================================================================
+
+✓✓✓ HYPOTHESIS I IS STRONGLY SUPPORTED
+
+================================================================================
+CREATING VISUALIZATIONS
+================================================================================
+
+Plot 1: Flexibility distribution...
+✓ Plot 1 saved
+Plot 2: Box plot comparison...
+✓ Plot 2 saved
+Plot 3: By-node flexibility...
+✓ Plot 3 saved
+Plot 4: Cluster assignments over time...
+✓ Plot 4 saved
+Plot 5: Cluster size evolution...
+✓ Plot 5 saved
+Plot 6: Silhouette scores over time...
+✓ Plot 6 saved
+Plot 7: Flexibility violin plot...
+✓ Plot 7 saved
+Plot 8: Statistical summary...
+✓ Plot 8 saved
+Plot 9: Flexibility heatmap by node and window...
+✓ Plot 9 saved
+Plot 10: Surrogate flexibility analysis...
+✓ Plot 10 saved
+
+================================================================================
+SAVING COMPREHENSIVE REPORT
+================================================================================
+
+✓ Report saved
+
+✓ Parameters and results saved
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+
+Output directory: /Users/itamarzernitsky/PycharmProjects/Networks/project_network_and_complexity_in_the_real_world/hypothesis1/hypothesis1_final_proof_spectral_k5_gamma1.0
+
+Files Created:
+  PDFs: 10
+  NPYs: 6
+  JSONs: 1
+  TXTs: 1
+
+Spectral Clustering Parameters:
+  K = 5
+  Gamma = 1.0
+  Mean Silhouette Score = 0.141441
+
+Final Flexibility Results:
+  Real brain:     0.801561 ± 0.038682
+  Surrogates:     0.786598 ± 0.002235
+  Difference:     0.014962
+
+Statistical Tests:
+  Mann-Whitney U: p = 1.19e-02
+  Wilcoxon:       p = 2.36e-02
+  KS-test:        p = 7.52e-08
+  Cohen's d:      0.5461
+
+Hypothesis Result:
+  ✓✓✓ HYPOTHESIS I IS STRONGLY SUPPORTED
+  Real brain shows TRUE stochastic dynamics
+
+================================================================================
