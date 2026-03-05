@@ -1,4 +1,3 @@
-```markdown
 # The Stochastic Engine: Optimization and Structural Order in Dynamic Brain Networks
 
 This repository contains the Python analysis pipeline, statistical testing, and visualization code for the project **"The Stochastic Engine: Optimization and Structural Order in Dynamic Brain Networks."** This project challenges the traditional localizationist view of the human brain as a static hierarchy of fixed functions. By modeling resting-state fMRI (rs-fMRI) data as a time-varying complex network, we demonstrate that the brain's apparent "noise" is actually the driving force of a highly optimized computational engine. The codebase empirically traces the brain's operational trajectory from micro-scale stochasticity to macro-scale thermodynamic efficiency.
@@ -38,7 +37,6 @@ The repository is organized by hypothesis. Each folder contains the specific scr
 ├── requirements.txt
 └── README.md
 
-```
 
 ## Installation & Setup
 
