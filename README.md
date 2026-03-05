@@ -1,3 +1,4 @@
+```markdown
 # The Stochastic Engine: Optimization and Structural Order in Dynamic Brain Networks
 
 This repository contains the Python analysis pipeline, statistical testing, and visualization code for the project **"The Stochastic Engine: Optimization and Structural Order in Dynamic Brain Networks."** This project challenges the traditional localizationist view of the human brain as a static hierarchy of fixed functions. By modeling resting-state fMRI (rs-fMRI) data as a time-varying complex network, we demonstrate that the brain's apparent "noise" is actually the driving force of a highly optimized computational engine. The codebase empirically traces the brain's operational trajectory from micro-scale stochasticity to macro-scale thermodynamic efficiency.
@@ -36,3 +37,98 @@ The repository is organized by hypothesis. Each folder contains the specific scr
 │   └── hypothesis3_thermodynamics.py
 ├── requirements.txt
 └── README.md
+
+```
+
+## Installation & Setup
+
+It is highly recommended to run this project inside an isolated Python virtual environment to avoid dependency conflicts.
+
+**1. Clone the repository:**
+
+```bash
+git clone <your-repository-url>
+cd <repository-name>
+
+```
+
+**2. Create a virtual environment:**
+
+* **On macOS and Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+
+```
+
+
+* **On Windows:**
+```cmd
+python -m venv venv
+venv\Scripts\activate
+
+```
+
+
+
+**3. Install the dependencies:**
+Ensure your virtual environment is activated, then run:
+
+```bash
+pip install -r requirements.txt
+
+```
+
+*(This will install necessary packages including `numpy`, `scipy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `networkx`, `nilearn`, and `nibabel`.)*
+
+## How to Run
+
+Navigate into the respective hypothesis folder and run the python script. Each script will automatically download the required fMRI data (if not already cached), perform the analysis, and generate a dedicated output directory containing the results.
+
+**Run Hypothesis I (Fluid Topology):**
+
+```bash
+cd hypothesis_1
+python hypothesis1_stochastic_engine.py
+cd ..
+
+```
+
+**Run Hypothesis II (The Tuning Cycle):**
+
+```bash
+cd hypothesis_2
+python hypothesis2_tuning_cycle.py
+cd ..
+
+```
+
+**Run Hypothesis III (Markovian Dynamics & Thermodynamics):**
+
+```bash
+cd hypothesis_3
+python hypothesis3_thermodynamics.py
+cd ..
+
+```
+
+## Outputs
+
+Executing each script generates an output directory (e.g., `hypothesis_3/hypothesis3_partb_final_publication/`) containing:
+
+* `/data/`: Saved numpy arrays (`.npy`), extracted time series, and `.csv` reports.
+* `/statistics_txt/`: Comprehensive statistical reports detailing p-values, correlations, Mann-Whitney U results, and effect sizes.
+* `/plots_pdf/`: High-resolution, publication-ready figures, including dynamic cluster assignments, phase space distributions, surrogate comparisons, and thermodynamic optimization metrics.
+
+## Contact
+
+For questions, discussions, or collaboration inquiries regarding this research or the codebase, please reach out:
+
+**Itamar Zernitsky**
+
+* **Email:** itamar.zernitsky@gmail.com
+* **Institution:** Bar Ilan University, Department of Mathematics
+
+```
+
+```
